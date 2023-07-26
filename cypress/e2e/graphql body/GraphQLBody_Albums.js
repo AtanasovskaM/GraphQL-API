@@ -13,7 +13,7 @@ query ($options: PageQueryOptions) {
   }
 }
   }
-  `
+  `;
 
 export const list_albums = `
 query (
@@ -29,7 +29,7 @@ query (
       }
     }
   }
-  `
+  `;
 export const select_album = `
   query {
       album(id: 1) {
@@ -42,7 +42,7 @@ export const select_album = `
         }       
       }
     }
-  `
+  `;
 
 export const create_album = `
 mutation (
@@ -57,7 +57,7 @@ mutation (
       }
     }
   }
-`
+`;
 export const update_album = `
 mutation (
     $id: ID!,
@@ -71,14 +71,14 @@ mutation (
         name
       }
     }
-  }`
+  }`;
 
 export const delete_album = `
 mutation (
     $id: ID!
   ) {
     deleteAlbum(id: $id)
-  }`
+  }`;
 
 export const random_album = `
 query {
@@ -91,4 +91,4 @@ query {
         username
     }       
   }
-}`  
+}`;
